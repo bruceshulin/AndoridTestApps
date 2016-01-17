@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- 指定该Android应用的包名，
+	该包名可用于唯一地表示该应用。 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="org.crazyit.helloworld"
+	android:versionCode="1"
+	android:versionName="1.0">
+	<!-- 指定Android应用标签、图标 -->
+	<application android:label="@string/app_name" android:icon="@drawable/icon">
+		<!-- 定义Android应用的一个组件：Activity
+			该Activity的类为HelloWorld，并指定该Activity的标签-->
+		<activity android:name="HelloWorld"
+				  android:label="@string/app_name">
+			<intent-filter>
+				<!-- 指定该Activity是程序的入口 -->
+				<action android:name="android.intent.action.MAIN" />
+				<!-- 指定加载该应用时运行该Activity -->
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+	</application>
+</manifest> 
