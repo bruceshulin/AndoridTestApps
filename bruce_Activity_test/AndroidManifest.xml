@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bruce_activity_test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.bruce_activity_test.OtherActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ExpandableListActivityTest"
+            android:label="设置程序参数">
+            
+        </activity>
+        <activity android:name=".PreferenceActivityTest"
+            android:label="查看星际兵种">
+            
+        </activity>
+        <activity android:name=".StartActivity"
+            android:label="Intent传参">
+            
+        </activity>
+        <activity android:name=".SecondActivity"
+            android:label="Intent传参">
+        </activity>
+        <activity android:name=".BundleTest"
+            android:label="注册信息">
+        </activity>
+        <activity android:name=".ResultActivity"
+            android:label="注册结果信息">
+        </activity>
+        <activity android:name=".ActivityForResult" android:launchMode="standard"
+            android:label="Activity窗口传参数"></activity>
+        <activity android:name=".SelectCityActivity" 
+            android:label="城市选择"></activity>
+        <activity android:name=".Lifecycle"
+            android:label="activity生命周期"></activity>        
+    </application>
+
+</manifest>
